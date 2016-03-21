@@ -19,6 +19,6 @@
 [user]
 	name = Suzuki Shunsuke
 [credential]
-    helper = gnomekeyring
+	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
 [hub]
 	protocol = https
