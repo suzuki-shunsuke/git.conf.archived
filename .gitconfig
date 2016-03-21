@@ -1,0 +1,24 @@
+[color]
+	ui = auto
+[push]
+	default = matching
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[merge]
+	tool = vimdiff
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[user]
+	name = Suzuki Shunsuke
+[credential]
+    helper = gnomekeyring
+[hub]
+	protocol = https
