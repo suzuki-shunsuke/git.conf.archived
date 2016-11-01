@@ -20,6 +20,6 @@
 [user]
 	name = Suzuki Shunsuke
 [credential]
-	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
+	helper = osxkeychain
 [hub]
 	protocol = https
