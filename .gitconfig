@@ -3,10 +3,13 @@
 [push]
 	default = matching
 [core]
-	editor = vim
-    filemode = false
+	editor = nvim
+	filemode = false
 [diff]
-	tool = vimdiff
+	# tool = vimdiff
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = "nvim -d -u ~/.config/nvim/init.vim \"$LOCAL\" \"$REMOTE\""
 [difftool]
 	prompt = false
 [mergetool]
@@ -23,3 +26,5 @@
 	helper = osxkeychain
 [hub]
 	protocol = https
+[alias]
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
